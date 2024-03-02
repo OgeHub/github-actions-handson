@@ -11,8 +11,8 @@ export class BooksController {
 
   @Post()
   @UsePipes(ValidationPipe)
-  create(@Body() createBookDto: CreateBookDto): Promise<Book> {
-    return this.booksService.create(createBookDto);
+  create(@Body() createBookDto: CreateBookDto) {
+   // return this.booksService.create(createBookDto);
   }
 
   @Get()
